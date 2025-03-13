@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>All Menu Items</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <center>
+    <div class="bth">
+        <div class="nav__logo">
+            <a href="#">
+                <img src="/assets/logo.png" alt="logo">
+            </a>
+        </div>
+        <a href="/index.html"><button class=" view__btn"> Home</button></a>
+    </center>
+    </div>
+    <section class="menu" id="menu">
+        <div class="section__container menu__container view__container">
+          <h2 class="section__header">Menu</h2>
+          <div class="dropdown">
+            <select name="pastry" id="dd" onchange=getSelectedValue()>
+              <option value="">Select Item</option>
+              <option value="deserts">Deserts</option>
+              <option value="snacks">Snacks</option>
+            </select>
+          </div>
+          <br/><br>
+          <div id="deserts" style="display: none;">
+          <div class="menu__grid">
+            <div class="menu__card">
+              <img src="assets/menu-5.jpg" alt="menu"/>
+              <div class="menu__card__content">
+                <h4>Devil's Delight Choclate Muffins</h4>
+                <h3>$12.00</h3>
+              </div>
+            </div>
+                <div class="menu__card">
+                    <img src="assets/menu-9.jpg" alt="menu"/>
+                    <div class="menu__card__content">
+                        <h4>Caramel Melted Choclate Pastry</h4>
+                        <h3>$15.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="assets/menu-10.jpg" alt="menu"/>
+                    <div class="menu__card__content">
+                        <h4>Strawberry Cheesecake </h4>
+                        <h3>$25.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="assets/menu-6.jpg" alt="menu"/>
+                    <div class="menu__card__content">
+                        <h4>Vanilla Choclate Muffins</h4>
+                        <h3>$16.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="assets/menu-7.jpg" alt="menu"/>
+                    <div class="menu__card__content">
+                        <h4>Choclate Donut's With Topping's</h4>
+                        <h3>$22.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="assets/menu-8.jpg" alt="menu"/>
+                    <div class="menu__card__content">    
+                        <h4>Doreamon's Doracake In Different Flavour's</h4>
+                        <h3>$35.00</h3>
+                    </div>
+                  </div>
+                <div class="menu__card">
+                <img src="assets/menu-3.jpg" alt="menu"/>
+                <div class="menu__card__content">
+                    <h4>Choclate Fudge Delight & Nut's</h4>
+                    <h3>$20.00</h3>
+                </div>
+                </div>
+                <div class="menu__card">
+                <img src="assets/menu-4.jpg" alt="menu"/>
+                <div class="menu__card__content">    
+                    <h4>Triple Layer Choclate Mousse</h4>
+                    <h3>$29.00</h3>
+                </div>
+                </div>
+            </div>
+          </div>
+        <div id="snacks" style="display: none;">
+          <div class="menu__grid">
+            <div class="menu__card">
+              <img src="assets/snack-1.jpg" alt="menu"/>
+              <div class="menu__card__content">
+                <h4>Plain Butter Croissant</h4>
+                <h3>$8.00</h3>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img src="assets/snack-2.jpg" alt="menu"/>
+              <div class="menu__card__content">
+                <h4>Crunchy Puff With Filling</h4>
+                <h3>$8.00</h3>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img src="assets/snack-3.jpg" alt="menu"/>
+              <div class="menu__card__content">
+                <h4>Bun Maska With Cream</h4>
+                <h3>$6.00</h3>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img src="assets/snack-4.jpg" alt="menu"/>
+              <div class="menu__card__content">
+                <h4>Cottage Chesse Fritters</h4>
+                <h3>$10.00</h3>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img src="assets/snack-5.jpg" alt="menu"/>
+              <div class="menu__card__content">
+                <h4>Caramel Pecan Cinnamon Roll</h4>
+                <h3>$14.00</h3>
+              </div>
+            </div>
+            <div class="menu__card">
+              <img src="assets/snack-6.jpg" alt="menu"/>
+              <div class="menu__card__content">
+                <h4>Chocolate Croissant (Pain au Chocolate)</h4>
+                <h3>$24.00</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <a href="#" class="footer__logo">
+              <img src="assets/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="footer__col">
+            <h4>Blogs</h4>
+            <ul class="footer__links">
+              <li>
+                <a href="#">
+                  The Art of Perfect Pastry: Secrets Behind Our Creations
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  5 Coffee and Pastry Pairings to Brighten Your Day
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Behind the Scenes: A Day in the Life of Our Pastry Chefs
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>New Items</h4>
+            <ul class="footer__links">
+              <li><a href="#">Menu Highlights</a></li>
+              <li><a href="#">Daily Specials</a></li>
+              <li><a href="#">Customer Testimonials</a></li>
+              <li><a href="#">Baking Workshops</a></li>
+              <li><a href="#">Blog & Recipe</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Social Media</h4>
+            <ul class="footer__links">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2025 DS Design's. All rights reserved !
+        </div>
+    </footer>
+  <script src="view.js"></script>
+</body>
+</html>
